@@ -1,0 +1,1050 @@
+2019-12-18 16:06:02,377 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 163, in post
+    response = client.page_execute(request, http_method="GET",charset="utf-8")
+TypeError: page_execute() got an unexpected keyword argument 'charset'
+2019-12-18 16:50:38,714 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 164, in post
+    response.charset = "utf-8"
+AttributeError: 'str' object has no attribute 'charset'
+2019-12-18 16:51:02,301 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 164, in post
+    return redirect(response)
+AttributeError: 'str' object has no attribute 'charset'
+2019-12-18 17:12:13,128 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:12:32,769 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:12:44,578 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:13:12,546 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:13:14,438 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:13:54,844 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:14:02,648 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:15:13,601 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:21:27,941 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 166, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:23:38,596 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 169, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 237, in page_execute
+    return url + "?" + query_string + "&" + url_encode(params, self.__config.charset)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\util\WebUtils.py", line 111, in url_encode
+    value = quote_plus(value)
+  File "D:\devtools\Anaconda2\Lib\urllib.py", line 1306, in quote_plus
+    return quote(s, safe)
+  File "D:\devtools\Anaconda2\Lib\urllib.py", line 1299, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u652f'
+2019-12-18 17:27:18,351 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 172, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-18 17:27:26,957 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 172, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 109, in __prepare_request_params
+    params = request.get_params()
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\request\AlipayTradePagePayRequest.py", line 122, in get_params
+    params[P_BIZ_CONTENT] = json.dumps(obj=self.biz_model.to_alipay_dict(), ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "D:\devtools\Anaconda2\Lib\json\encoder.py", line 210, in encode
+    return ''.join(chunks)
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 1: ordinal not in range(128)
+2019-12-19 08:58:16,802 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 08:58:28,859 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 145, in post
+    total_amount = request.data.get("order_allprice","").encode("utf-8")
+AttributeError: 'int' object has no attribute 'encode'
+2019-12-19 08:58:52,088 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 145, in post
+    total_amount = request.data.get("order_allprice","").encode("utf-8")
+AttributeError: 'int' object has no attribute 'encode'
+2019-12-19 09:20:51,964 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:22:40,486 FuncName:get_response LINE:152 [WARNING]- Not Found: /orderlist/alipay_handler/
+2019-12-19 09:22:40,622 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-19 09:32:16,155 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:32:20,196 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:32:21,108 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:32:24,342 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:32:27,723 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:35:22,285 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:35:25,559 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:38:12,387 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:40:11,184 FuncName:get_response LINE:152 [WARNING]- Not Found: /shopCart/
+2019-12-19 09:42:16,230 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:42:20,111 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:47:55,536 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:47:59,280 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:48:13,236 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 09:56:13,328 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:06:29,894 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:13:25,849 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:28:29,015 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:28:43,619 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:28:43,700 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:29:18,243 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 182, in get
+    print(request.params)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'params'
+2019-12-19 10:29:59,387 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:30:10,099 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:31:43,065 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:44:52,266 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 10:44:54,085 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 183, in post
+    if not response_content:
+UnboundLocalError: local variable 'response_content' referenced before assignment
+2019-12-19 10:59:57,095 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 175, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 129, in __prepare_request_params
+    raise RequestException('[' + THREAD_LOCAL.uuid + ']request sign failed. ' + str(e))
+RequestException: [a3780d40-220b-11ea-a8a2-902b34a71765]request sign failed. Unable to read this file, version ?!= 0
+2019-12-19 11:00:09,727 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 175, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 129, in __prepare_request_params
+    raise RequestException('[' + THREAD_LOCAL.uuid + ']request sign failed. ' + str(e))
+RequestException: [ab029800-220b-11ea-b954-902b34a71765]request sign failed. Unable to read this file, version ?!= 0
+2019-12-19 11:00:59,934 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 174, in post
+    response = client.page_execute(request, http_method="GET")
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 234, in page_execute
+    query_string, params = self.__prepare_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 89, in __prepare_request
+    common_params, params = self.__prepare_request_params(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\alipay\aop\api\DefaultAlipayClient.py", line 129, in __prepare_request_params
+    raise RequestException('[' + THREAD_LOCAL.uuid + ']request sign failed. ' + str(e))
+RequestException: [c8eb7440-220b-11ea-83f5-902b34a71765]request sign failed. Unable to read this file, version ?!= 0
+2019-12-19 11:02:23,694 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 181, in get
+    print(request.params)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'params'
+2019-12-19 11:02:45,634 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 181, in get
+    print(request.params_data)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'params_data'
+2019-12-19 11:04:19,898 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:05:06,523 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:06:36,655 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:06:44,368 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:08:27,295 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:10:55,548 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:11:01,197 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:11:36,066 FuncName:get_response LINE:152 [WARNING]- Not Found: /shopCart/
+2019-12-19 11:11:44,134 FuncName:get_response LINE:152 [WARNING]- Not Found: /shopCart/
+2019-12-19 11:11:52,391 FuncName:get_response LINE:152 [WARNING]- Not Found: /shopCart/
+2019-12-19 11:12:02,907 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:12:43,605 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:12:47,793 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 11:14:13,242 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 15:25:40,605 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 15:25:44,759 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 15:25:56,184 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 15:26:11,836 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 15:32:02,947 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 16:10:21,448 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 204, in post
+    return Response(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+2019-12-19 16:12:15,608 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<type 'NoneType'>`
+2019-12-19 16:53:23,882 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-19 17:03:02,437 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 10:12:49,092 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 195, in get
+    status = alipay.verify(params, sign)
+AttributeError: 'DefaultAlipayClient' object has no attribute 'verify'
+2019-12-20 10:12:49,638 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-20 11:21:03,769 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 11:23:32,467 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 11:24:29,753 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 11:50:05,858 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:50:07,776 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:50:55,446 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:51:00,447 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:51:08,790 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:51:34,484 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 11:51:37,766 FuncName:get_response LINE:152 [WARNING]- Not Found: /adminlist/media/admin/undefined
+2019-12-20 16:02:15,276 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 16:10:39,028 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 207, in get
+    for i in good_list:
+TypeError: 'NoneType' object is not iterable
+2019-12-20 16:23:58,490 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 212, in get
+    food_number =obj.get("food_number","")
+AttributeError: 'str' object has no attribute 'get'
+2019-12-20 16:26:46,086 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 213, in get
+    food_number =obj.get("food_number","")
+AttributeError: 'str' object has no attribute 'get'
+2019-12-20 16:27:12,752 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 212, in get
+    for i in good_list:
+TypeError: 'NoneType' object is not iterable
+2019-12-20 16:27:54,615 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 214, in get
+    food_number =obj.get("food_number","")
+AttributeError: 'str' object has no attribute 'get'
+2019-12-20 16:29:19,920 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 209, in get
+    good_list = json.loads(conn.get(processed_dict["out_trade_no"]))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\devtools\Anaconda2\Lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\devtools\Anaconda2\Lib\json\decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name: line 1 column 3 (char 2)
+2019-12-20 16:31:26,338 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 214, in get
+    food_number =obj.get("food_number","")
+AttributeError: 'unicode' object has no attribute 'get'
+2019-12-20 16:33:58,318 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 209, in get
+    good_list = json.loads(conn.get(processed_dict["out_trade_no"]))
+  File "D:\devtools\Anaconda2\Lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\devtools\Anaconda2\Lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\devtools\Anaconda2\Lib\json\decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name: line 1 column 3 (char 2)
+2019-12-20 17:00:59,819 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:02:34,023 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:04:12,799 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:04:15,654 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:04:58,782 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /shopcartlist/alipay_handler/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\apps\shopcart_list\views.py", line 207, in get
+    businessinfo = BussCommentListMod.objects.get(bid=obj.get("bid",""))
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\db\models\query.py", line 384, in get
+    (self.model._meta.object_name, num)
+MultipleObjectsReturned: get() returned more than one BussCommentListMod -- it returned 2!
+2019-12-20 17:05:06,732 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:05:14,691 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:10:53,063 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:10:57,640 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-20 17:10:58,243 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-23 16:51:14,191 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-23 17:31:15,148 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-23 17:32:02,338 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:10:22,801 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:12:32,667 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:12:39,648 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:45,474 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:48,177 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:51,816 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:56,140 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:58,108 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:16:59,571 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:17:01,016 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:17:03,061 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-24 11:31:16,107 FuncName:get_response LINE:152 [WARNING]- Not Found: /foodlist/media/food/
+2019-12-26 10:37:40,440 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-26 10:39:53,848 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-26 11:20:11,339 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-26 12:31:03,608 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-26 12:52:44,790 FuncName:get_response LINE:152 [WARNING]- Not Found: /api/v1/login/
+2019-12-26 12:52:58,280 FuncName:get_response LINE:152 [WARNING]- Not Found: /api/v1/login/
+2019-12-26 14:21:45,186 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-27 10:56:19,868 FuncName:get_response LINE:152 [WARNING]- Not Found: /favicon.ico
+2019-12-27 14:57:55,434 FuncName:handle_uncaught_exception LINE:135 [ERROR]- Internal Server Error: /api/userlogin/
+Traceback (most recent call last):
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\utils\decorators.py", line 141, in _wrapped_view
+    result = middleware.process_request(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\middleware\csrf.py", line 205, in process_request
+    csrf_token = self._get_token(request)
+  File "D:\vue+django2\hou\houVenv\lib\site-packages\django\middleware\csrf.py", line 177, in _get_token
+    cookie_token = request.COOKIES[settings.CSRF_COOKIE_NAME]
+AttributeError: 'LoginUserView' object has no attribute 'COOKIES'
