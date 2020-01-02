@@ -6,8 +6,8 @@
 密码123456   
 数据库shop_management   
 
-数据库redis配置
-账户密码无
+数据库redis配置   
+账户密码无   
 
 前端   
 cd qian   
