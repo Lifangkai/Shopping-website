@@ -530,4 +530,7 @@ img {
   height: 120px;
   display: block;
 }
+/* .el-switch.is-checked .el-switch__core {
+  cursor:not-allowed
+} */
 </style>

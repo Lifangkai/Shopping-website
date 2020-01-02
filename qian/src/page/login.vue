@@ -27,9 +27,9 @@
             <el-form-item>
               <el-button @click="isRegister = !isRegister" class="submit_btn">注册</el-button>
             </el-form-item>
-            <el-form-item>
+            <!-- <el-form-item>
               <el-button @click="$router.go(-1)" class="submit_btn">返回</el-button>
-            </el-form-item>
+            </el-form-item> -->
           </el-form>
           <slide-verify
           v-if="isShow"
