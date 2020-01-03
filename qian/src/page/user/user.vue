@@ -15,8 +15,8 @@
         <el-menu-item index="userHome">
           <h3>个人购物网站</h3>
         </el-menu-item>
-        <!-- <el-menu-item index="goodList">站内搜索</el-menu-item> -->
         <el-menu-item index="goodAll">所有商品</el-menu-item>
+        <el-menu-item index="猜你喜欢">猜你喜欢</el-menu-item>
         <el-menu-item index="食品区">食品区</el-menu-item>
         <el-menu-item index="护肤品区">护肤品区</el-menu-item>
         <el-menu-item index="纺织区">纺织区</el-menu-item>
@@ -93,6 +93,7 @@ export default {
     // 选中导航
     handleSelect(key, keyPath) {
       if (
+        key == "猜你喜欢" ||
         key == "食品区" ||
         key == "护肤品区" ||
         key == "纺织区" ||

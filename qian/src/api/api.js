@@ -114,6 +114,8 @@ export const shopCartDel = params => { return Axios.post(`${base}/shopcartlist/d
 export const shopCartAll = params => { return Axios.get(`${base}/shopcartlist/query/`, { params: params }).then(res => res.data) };
 // 支付宝支付
 export const alipay = params => { return Axios.post(`${base}/shopcartlist/alipay/`, params).then(res => res.data) };
+// 猜你喜欢
+export const foodLike = params => { return Axios.get(`${base}/commentlist/foodlike/`, { params: params }).then(res => res.data) };
 
 let api = {
     userLogin,
@@ -178,7 +180,8 @@ let comment = {
     bussComm,
     foodComm,
     bussAdd,
-    foodAdd
+    foodAdd,
+    foodLike
 }
 
 let shopcart = {

@@ -8,7 +8,8 @@ from .models import BussCommentListMod
 from .models import FoodCommentListMod
 from .serializer import BussCommitSerializer
 from .serializer import FoodCommentSerializer
-# from rest_framework_extensions.cache.mixins import CacheResponseMixin
+from util_con import db
+from comm_func import deleteDuplicate
 from rest_framework_extensions.cache.decorators import (
     cache_response
 )
@@ -98,6 +99,34 @@ class FoodCommAddView(APIView):
             res = {
                 "code": ERRORCODE.SUCCESS,
                 "msg": ERRORMSG.SUCCESS
+            }
+        except:
+            res = {
+                "code": ERRORCODE.ERROR_WEBSERVER,
+                "msg": ERRORMSG.ERROR_WEBSERVER
+            }
+        return Response(res)
+
+class FoodLikeView(APIView):
+    """
+    根据买过的店铺推荐
+    """
+    def get(self, request):
+        try:
+            uid = request.session.get("user_id","")
+            cursor = db.cursor()
+            cursor.execute("SELECT bid FROM order_list_orderlistmod WHERE uid='{}'".format(uid))
+            orderinfo = cursor.fetchall()
+            orderinfo = list(orderinfo)
+            orderinfo = deleteDuplicate(orderinfo)
+            datalist = []
+            for i in orderinfo:
+                cursor.execute("SELECT * FROM food_list_foodlistmod WHERE bid='{}'".format(i.get("bid","")))
+                data = cursor.fetchone()
+                datalist.append(data)
+            res = {
+                "code": ERRORCODE.SUCCESS,
+                "data": datalist
             }
         except:
             res = {

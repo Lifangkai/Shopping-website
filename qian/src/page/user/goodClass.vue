@@ -7,25 +7,25 @@
           <el-input v-model="search" placeholder="请输入商品名称">
           </el-input>
         </div>
-      </el-col> -->
+      </el-col>-->
     </el-row>
     <!-- 商品分类 -->
-        <el-row type="flex">
-          <template v-for="(value,i) in dataList">
-            <el-col :span="4">
-              <el-card :body-style="{ padding: '0px' }">
-                <img :src="foodImageUrl + value.food_avator" style="height:200px;width:100%" />
-                <div style="padding: 14px;">
-                  <p class="foodName">{{ value.food_name }}</p>
-                  <p class="foodSell">特点：{{ value.food_characteristic }}</p>
-                  <div class="bottom">
-                    <el-button type="text" class="button" @click="handleClick(value,i)">商品详情</el-button>
-                  </div>
-                </div>
-              </el-card>
-            </el-col>
-          </template>
-        </el-row>
+    <el-row type="flex">
+      <template v-for="(value,i) in dataList">
+        <el-col :span="4">
+          <el-card :body-style="{ padding: '0px' }">
+            <img :src="foodImageUrl + value.food_avator" style="height:200px;width:100%" />
+            <div style="padding: 14px;">
+              <p class="foodName">{{ value.food_name }}</p>
+              <p class="foodSell">特点：{{ value.food_characteristic }}</p>
+              <div class="bottom">
+                <el-button type="text" class="button" @click="handleClick(value,i)">商品详情</el-button>
+              </div>
+            </div>
+          </el-card>
+        </el-col>
+      </template>
+    </el-row>
 
     <!-- 商品搜索 -->
     <!-- <template v-else>
@@ -44,28 +44,28 @@
           </el-col>
         </template>
       </el-row>
-    </template> -->
+    </template>-->
   </div>
 </template>
 <script>
-import { food, foodImageUrl } from "../../api/api.js";
+import { food, foodImageUrl, comment } from "../../api/api.js";
 import { array_remove_repeat, deepClone } from "../comm_func.js";
 export default {
   data() {
     return {
       foodImageUrl,
-      dataList: [],
+      dataList: []
     };
   },
   mounted() {
-    let className = this.$route.query.data
+    let className = this.$route.query.data;
     this.initData(className);
   },
   watch: {
-      $route(to) {
-          let className = this.$route.query.data
-          this.initData(className)
-      }
+    $route(to) {
+      let className = this.$route.query.data;
+      this.initData(className);
+    }
   },
   computed: {
     // searchList() {
@@ -77,14 +77,22 @@ export default {
   methods: {
     // 初始化数据
     initData(ele) {
+      if (ele == "猜你喜欢") {
+        comment.foodLike().then(res => {
+          if (res.code == "0000") {
+            this.dataList = res.data;
+          }
+        });
+      } else {
         let params = {
-            food_class:ele
-        }
-      food.foodListQuery(params).then(res => {
-        if (res.code == "0000") {
-          this.dataList = res.data;
-        }
-      });
+          food_class: ele
+        };
+        food.foodListQuery(params).then(res => {
+          if (res.code == "0000") {
+            this.dataList = res.data;
+          }
+        });
+      }
     },
     // 商品详情
     handleClick(value, i) {
@@ -104,32 +112,32 @@ export default {
 <style lang="less">
 @import "../../style/mixin";
 .time {
-    font-size: 13px;
-    color: #999;
-  }
-  
-  .bottom {
-    margin-top: 13px;
-    line-height: 12px;
-  }
+  font-size: 13px;
+  color: #999;
+}
 
-  .button {
-    padding: 0;
-    float: right;
-  }
+.bottom {
+  margin-top: 13px;
+  line-height: 12px;
+}
 
-  .image {
-    width: 100%;
-    display: block;
-  }
+.button {
+  padding: 0;
+  float: right;
+}
 
-  .clearfix:before,
-  .clearfix:after {
-      display: table;
-      content: "";
-  }
-  
-  .clearfix:after {
-      clear: both
-  }
+.image {
+  width: 100%;
+  display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
 </style>
