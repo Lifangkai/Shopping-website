@@ -68,3 +68,24 @@ export const getCookie = (cname) => {
     }
     return "";
 }
+
+// 获取元素距离左边浏览器距离
+export const getOffsetLeft = (obj) => {
+    var tmp = obj.offsetLeft;
+    var node = obj.offsetParent;
+    while (node != null) {
+        tmp += node.offsetLeft;
+        node = node.offsetParent;
+    }
+    return tmp;
+};
+// 获取元素距离上边浏览器距离
+export const getOffsetTop = (obj) => {
+    var tmp = obj.offsetTop;
+    var node = obj.offsetParent;
+    while (node != null) {
+        tmp += node.offsetTop;
+        node = node.offsetParent;
+    }
+    return tmp;
+};

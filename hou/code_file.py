@@ -1,6 +1,19 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 
+class MYSQLINFO(object):
+    HOST = "127.0.0.1"
+    PORT = "3306"
+    USER = "root"
+    PASSWD = "123456"
+    DB = "shop_management"
+
+class REDISINFO(object):
+    HOST = "127.0.0.1"
+    PORT = "6379"
+    USER = ""
+    PASSWD = ""
+
 class ERRORCODE(object):
     SUCCESS    =        "0000"
     ERROR_LOGIN =       "0001"

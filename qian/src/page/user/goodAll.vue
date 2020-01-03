@@ -36,9 +36,9 @@
 
     <!-- 商品搜索 -->
     <template v-else>
-      <el-row type="flex">
+      <el-row>
         <template v-for="(value,i) in searchList">
-          <el-col :span="4">
+          <el-col :span="4" style="marginTop:20px">
             <el-card :body-style="{ padding: '0px' }">
               <img :src="foodImageUrl + value.food_avator" style="height:200px;width:100%" />
               <div style="padding: 14px;">

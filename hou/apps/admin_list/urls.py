@@ -13,5 +13,3 @@ urlpatterns = [
     url(r'^queryone/', AdminQueryOneView.as_view(), name="admin_query_one"),
     url(r'^queryimg/', AdminQueryImageView.as_view(), name="admin_query_img"),
 ] + static(settings.ADMIN_URL, document_root=settings.ADMIN_ROOT)
-
-# urlpatterns += static(settings.ADMIN_URL, document_root=settings.ADMIN_ROOT)

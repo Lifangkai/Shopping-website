@@ -28,6 +28,7 @@
         <el-table-column label="订单状态" prop="order_status"></el-table-column>
         <el-table-column label="操作">
           <template slot-scope="scope">
+            <!-- <el-button size="small" type="success" plain @click="handleSuc(scope.$index, scope.row)">确认收货</el-button> -->
             <el-button size="small" type="danger" plain @click="handleDel(scope.$index, scope.row)">删除订单</el-button>
             <el-button
               size="small"
@@ -206,6 +207,10 @@ export default {
         return
       }
     },
+    // 确认收货
+    // handleSuc(){
+
+    // },
     // 提交订单修改
     submit(ret) {
       // console.log(this.form)

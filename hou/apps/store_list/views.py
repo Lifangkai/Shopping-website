@@ -14,7 +14,7 @@ from .serializer import StoreSerializer
 from .serializer import StoreWarnSerializer
 from business_list.models import BussinessListMod,BusinessImageMod
 from food_list.models import FoodListMod
-from mysql_con import db
+from util_con import db
 
 
 # Create your views here.

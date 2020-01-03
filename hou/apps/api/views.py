@@ -187,3 +187,23 @@ class StoreRegisterView(APIView):
                     "msg": ERRORMSG.ERROR_WEBSERVER
                 }
         return Response(res)
+
+class LoginOut(APIView):
+    """
+    退出登录
+    """
+    def get(self, request):
+        try:
+            request.session["user_id"] = None
+            request.session["store_id"] = None
+            request.session["admin_id"] = None
+            res = {
+                "code": ERRORCODE.SUCCESS,
+                "msg": ERRORMSG.SUCCESS
+            }
+        except:
+            res = {
+                "code": ERRORCODE.ERROR_WEBSERVER,
+                "msg": ERRORMSG.ERROR_WEBSERVER
+            }
+        return Response(res)

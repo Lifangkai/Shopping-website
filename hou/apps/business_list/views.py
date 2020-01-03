@@ -12,7 +12,7 @@ from .serializer import BusinessSerializer
 from rest_framework_extensions.cache.decorators import (
     cache_response
 )
-from mysql_con import db
+from util_con import db
 
 
 # Create your views here.

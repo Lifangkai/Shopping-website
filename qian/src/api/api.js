@@ -30,6 +30,8 @@ export const adminLogin = params => { return Axios.post(`${base}/api/adminlogin/
 export const userRegister = params => { return Axios.post(`${base}/api/userregister/`, params).then(res => res.data) };
 // 商家注册
 export const storeRegister = params => { return Axios.post(`${base}/api/storeregister/`, params).then(res => res.data) };
+// 退出登录
+export const loginOut = params => { return Axios.get(`${base}/api/loginout/`, {params:params}).then(res => res.data) };
 // 所有用户数据
 export const userListAll = params => { return Axios.get(`${base}/userlist/query/`, { params: params }).then(res => res.data) };
 // 单个用户数据
@@ -118,7 +120,8 @@ let api = {
     storeLogin,
     adminLogin,
     userRegister,
-    storeRegister
+    storeRegister,
+    loginOut
 }
 
 let user = {

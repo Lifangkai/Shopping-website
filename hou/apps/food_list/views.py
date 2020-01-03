@@ -8,7 +8,6 @@ from .models import FoodImageMod
 from .models import FoodListMod
 from .serializer import FoodListSerializer
 
-
 # Create your views here.
 
 class FoodQueryView(APIView):

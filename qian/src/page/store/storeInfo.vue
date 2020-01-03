@@ -36,7 +36,7 @@
 </template>
 <script>
 import headTop from "../../components/headTop";
-import { store } from "@/api/api.js";
+import { store,api } from "@/api/api.js";
 import md5 from "js-md5";
 import { deepClone } from "../comm_func.js"
 export default {
@@ -172,11 +172,15 @@ export default {
     },
     // 退出
     back(){
-      sessionStorage.removeItem("storeinfo")
-      sessionStorage.removeItem("userroot")
-      sessionStorage.removeItem("username")
-      sessionStorage.removeItem("isShowShop")
-      this.$router.push({path:"/"})
+      api.loginOut().then(res => {
+        if(res.code == "0000"){
+          sessionStorage.removeItem("storeinfo")
+          sessionStorage.removeItem("userroot")
+          sessionStorage.removeItem("username")
+          sessionStorage.removeItem("isShowShop")
+          this.$router.push({path:"/"})
+        }
+      })
     }
   }
 };

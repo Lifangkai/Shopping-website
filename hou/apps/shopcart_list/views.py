@@ -207,7 +207,7 @@ class PayHandlerView(APIView):
             del obj["fid"]
             del obj["food_number"]
             OrderListMod.objects.create(**obj)
-        response = redirect("http://127.0.0.1:8000/")
+        response = redirect("http://localhost:8080/shopCart")
         return response
 
     def post(self, request):

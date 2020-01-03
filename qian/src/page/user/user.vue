@@ -27,11 +27,11 @@
         <el-menu-item index="日用品区">日用品区</el-menu-item>
         <el-submenu index="2">
           <template slot="title">个人中心</template>
-          <el-menu-item index="userInfo" v-show="username" >个人信息</el-menu-item>
-          <el-menu-item index="userOrder" v-show="username" >订单管理</el-menu-item>
-          <el-menu-item index="shopCart" v-show="username" >购物车</el-menu-item>
-          <el-menu-item index="login" v-show="!username" >登陆注册</el-menu-item>
-          <el-menu-item index="/" v-show="username" @click="back">退出登陆</el-menu-item>
+          <el-menu-item index="userInfo" v-show="userinfo" >个人信息</el-menu-item>
+          <el-menu-item index="userOrder" v-show="userinfo" >订单管理</el-menu-item>
+          <el-menu-item index="shopCart" v-show="userinfo" >购物车</el-menu-item>
+          <el-menu-item index="login" v-show="!userinfo" >登陆注册</el-menu-item>
+          <el-menu-item index="/" v-show="userinfo" @click="back">退出登陆</el-menu-item>
         </el-submenu>
       </el-menu>
     </div>
@@ -58,26 +58,22 @@
   </div>
 </template>
 <script>
-import { user } from "../../api/api.js";
+import { user,api } from "../../api/api.js";
+import { deepClone } from "../comm_func.js"
 export default {
   data() {
     return {
-      activeIndex2: "userHome"
+      activeIndex2: "userHome",
+      userinfo:""
     };
   },
   beforeMount() {
     this.initData();
   },
   mounted() {
-    console.log(this.username)
+    // console.log(this.userinfo)
   },
   computed: {
-    username() {
-      return sessionStorage.getItem("username");
-    },
-    userroot() {
-      return this.$store.state.userroot;
-    }
   },
   methods: {
     // 初始化数据
@@ -85,10 +81,12 @@ export default {
       let data = {};
       user.userListOne().then(res => {
         if (res.code == "0000") {
-          data = res.data[0];
+          data = deepClone(res.data[0]);
+          this.userinfo = res.data[0]
           data = JSON.stringify(data)
-          // this.$store.commit("setUserInfo", data);
           sessionStorage.setItem("userinfo",data)
+          sessionStorage.setItem("username",res.data[0].user_name)
+          sessionStorage.setItem("userroot","1")
         }
       });
     },
@@ -116,10 +114,14 @@ export default {
     },
     // 退出登陆
     back(){
-      sessionStorage.removeItem("userinfo")
-      sessionStorage.removeItem("userroot")
-      sessionStorage.removeItem("username")
-      this.$router.go(0)
+      api.loginOut().then(res => {
+        if(res.code == "0000"){
+          sessionStorage.removeItem("userinfo")
+          sessionStorage.removeItem("userroot")
+          sessionStorage.removeItem("username")
+          this.$router.go(0)
+        }
+      })
     }
   }
 };

@@ -15,17 +15,16 @@
 </template>
 
 <script>
-import { user,store,admin,adminImageUrl } from "@/api/api.js";
+import { user, store, admin, adminImageUrl, api } from "@/api/api.js";
 export default {
   data() {
     return {
       adminImageUrl
     };
   },
-  created() {
-  },
+  created() {},
   mounted() {
-    console.log(this.admininfo)
+    console.log(this.admininfo);
   },
   computed: {
     username() {
@@ -43,14 +42,14 @@ export default {
       if (command == "home") {
         this.$router.push("/adminSet");
       } else if (command == "singout") {
-        sessionStorage.removeItem("admininfo")
-        sessionStorage.removeItem("userroot")
-        sessionStorage.removeItem("username")
-        this.$message({
-          type: "success",
-          message: "退出成功"
-        });
-        this.$router.push("/");
+        api.loginOut().then(res => {
+          if (res.code == "0000") {
+            sessionStorage.removeItem("admininfo");
+            sessionStorage.removeItem("userroot");
+            sessionStorage.removeItem("username");
+            this.$router.push({ path: "/" });
+          }
+        })
       }
     }
   }
