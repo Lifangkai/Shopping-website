@@ -1,6 +1,8 @@
 # Shopping-website
 使用vue和drf开发
 
+运行环境python2.7   
+
 数据库mysql配置   
 用户名root   
 密码123456   
