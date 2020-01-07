@@ -19,10 +19,10 @@ npm run dev
 后端   
 cd hou   
 
+pip install -r requirements.txt   
+
 python manage.py makemigrations   
 
 python manage.py migrate   
-
-cd hou/houVenv/scripts/activate   
 
 python manage.py runserver 8000   
