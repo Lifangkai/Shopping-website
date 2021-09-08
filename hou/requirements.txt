@@ -31,7 +31,7 @@ numpy==1.16.5
 olefile==0.46
 pandas==0.24.2
 pathlib2==2.3.5
-Pillow==4.1.1
+Pillow==8.3.2
 protobuf==3.11.1
 pyasn1==0.4.8
 pycrypto==2.6.1
