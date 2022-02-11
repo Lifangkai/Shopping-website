@@ -32,7 +32,7 @@ olefile==0.46
 pandas==0.24.2
 pathlib2==2.3.5
 Pillow==4.1.1
-protobuf==3.11.1
+protobuf==3.15.0
 pyasn1==0.4.8
 pycrypto==2.6.1
 pycryptodome==3.9.4
