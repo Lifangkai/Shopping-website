@@ -2,7 +2,7 @@ alipay-sdk-python==3.3.202
 amqp==2.5.2
 backports.functools-lru-cache==1.6.1
 billiard==3.6.1.0
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 configparser==4.0.2
 contextlib2==0.6.0.post1
